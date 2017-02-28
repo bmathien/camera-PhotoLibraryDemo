@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="CameraAndPhotoLibraryDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrF-Vj-KZs">
+                                <rect key="frame" x="0.0" y="598" width="180" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3aZ-id-mTk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cqh-7p-SiF"/>
+                                </connections>
+                            </button>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Mobile Makers Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-ss-wJa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="555"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7B-Nh-sB0">
+                                <rect key="frame" x="181" y="597" width="194" height="70"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="0.82999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0J1-ep-owK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Photos">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoLibraryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDr-NY-mmd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="L7B-Nh-sB0" secondAttribute="trailing" id="3y0-Sj-oEh"/>
+                            <constraint firstAttribute="trailing" secondItem="VlS-ss-wJa" secondAttribute="trailing" id="6Ot-yc-xEy"/>
+                            <constraint firstItem="IrF-Vj-KZs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FRQ-Jv-zLB"/>
+                            <constraint firstAttribute="bottom" secondItem="IrF-Vj-KZs" secondAttribute="bottom" constant="-1" id="HgN-5e-vF3"/>
+                            <constraint firstItem="IrF-Vj-KZs" firstAttribute="top" secondItem="VlS-ss-wJa" secondAttribute="bottom" id="Wof-sK-93J"/>
+                            <constraint firstItem="VlS-ss-wJa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cPl-Nl-CdE"/>
+                            <constraint firstItem="L7B-Nh-sB0" firstAttribute="leading" secondItem="IrF-Vj-KZs" secondAttribute="trailing" id="cjY-JW-SdZ"/>
+                            <constraint firstAttribute="bottom" secondItem="L7B-Nh-sB0" secondAttribute="bottom" id="eDh-JX-wHR"/>
+                            <constraint firstItem="VlS-ss-wJa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="neF-kQ-sjh"/>
+                            <constraint firstItem="L7B-Nh-sB0" firstAttribute="leading" secondItem="IrF-Vj-KZs" secondAttribute="trailing" id="oDZ-O9-bMQ"/>
+                            <constraint firstItem="L7B-Nh-sB0" firstAttribute="width" secondItem="IrF-Vj-KZs" secondAttribute="width" constant="-4" id="uSD-0F-Npq"/>
+                            <constraint firstItem="L7B-Nh-sB0" firstAttribute="top" secondItem="VlS-ss-wJa" secondAttribute="bottom" id="ucY-Ga-Rmj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="VlS-ss-wJa" id="YFq-2y-hcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mobile Makers Wallpaper" width="1440" height="900"/>
+    </resources>
+</document>
